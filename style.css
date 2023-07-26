@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: F37 Ginger;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    /* z-index: 2; */
+    /* overflow: hidden; */
+    width: 100%;
+    /* background-color: rgb(97 26 190); */
+
+}
+#page1{
+    background-color: rgb(97 26 190);
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 25vw;
+    overflow: hidden;
+    position: relative;
+    
+
+
+}
+#main::-webkit-scrollbar{
+    display: none;
+}
+#nav img{
+    width: 3vw;
+}
+#nav{
+    background-color: transparent;
+    width: 100vw;
+    display: flex;
+    padding: 2vw;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    justify-content: space-between;
+
+}
+#nav a{
+    letter-spacing: 0.2vw;
+    
+    font-size: 0.8vw;
+    text-decoration: none;
+    color: white;
+    position: relative;
+
+
+    
+    
+
+}
+#nav a::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 70%;
+    background-image: url(https://toyfight.co/wp-content/themes/toybox/img/ui/wiggle-work.svg);
+    background-repeat:repeat-x ;
+    bottom: -20%;
+    left: 50%;
+    background-size: contain;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+transform: translateX(-50%);
+transition: 0.45s cubic-bezier(0.52, 0.01, 0.16, 1);
+}
+#nav a:hover::before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+/* #nav a .line{
+
+    margin-top: 0.5vw;
+    height: 0.1vw;
+    width: 0;
+    background-color: white;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+
+#nav a:hover .line{
+    width: 100%;
+} */
+#centernav{
+    display: flex;
+    gap: 1.5vw;
+
+}
+#centernav a{
+
+    color: white;
+    text-decoration: none;
+}
+h1{
+    font-size: 24vw;
+    color: rgb(251 225 17);
+    text-align: center;
+    margin-top: 4vw;
+    margin-left: -3vw;
+    letter-spacing: -1.2vw;
+    position: relative;
+    z-index:1;
+
+}
+#page1>img{
+    position: absolute;
+    z-index: 2;
+    width: 96vw;
+
+    object-fit: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#page1::-webkit-scrollbar{
+    display: none;
+}
+#page2{
+    position: relative;
+    width: 100vw;
+    background-color: rgb(97 26 190);
+}
+h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 25vw; */
+    position: relative;
+    color: white;
+}
+#yellowdesign{
+    margin-top: 1vw;
+
+    width: 2vw;
+    height: 0.5vw;
+    transform: rotateZ(-20deg);
+    background-color: rgb(251 225 17);
+}
+#products{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    margin-top: 11vw;
+    gap: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25vw ;
+}
+#products h2{
+    /* background-color: black; */
+    font-size: 10vw;
+    color: white;
+    cursor: pointer;
+}
+.hover{
+    background-color: transparent;
+    margin-top: -15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 15vw;
+}
+.hover img{
+    width: 10vw;
+    opacity: 0;
+    margin-top: 12vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+
+}
+#products h2:hover img{
+    opacity: 1;
+    margin-top: 0vw;
+}
+#two{
+    width: 7vw;
+}
+#three{
+
+    width: 10.5vw;
+}
+#four{
+    width: 12vw;
+}
+#five{
+    width: 13vw;
+}
+#six{
+    width: 14vw;
+}
+#seven{
+    width: 5.5vw;
+}
+#nine{
+    width: 17vw;
+}
+#ten{
+    width: 17vw;
+}
+#footer{
+    /* padding-top: 5vw; */
+    width: 100vw;
+    position: relative;
+    background-color: rgb(235, 230, 230);
+    /* padding-top: 7vw; */
+
+}
+#footer #up #name{
+    width: 45vw;
+    /* margin-left: 28vw; */
+    margin-bottom: 12vw;
+    margin-top: 5vw;
+}
+#up{
+
+    /* height: 30vw; */
+    width: 100%;
+    background-color:rgb(235, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#main #footer #handcontainer{
+    /* padding-top: 20vw; */
+
+    overflow: hidden;
+    width: 100vw;
+    position: absolute;
+    margin-top: -32vw;
+    /* transform: translate(-50%,0%); */
+    
+
+
+}
+#handcontainer img{
+    width: 13vw;
+    margin-left: 45vw;
+}
+#down{
+    
+    background-color:white;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#down small{
+    margin-left: 2vw;
+    font-size: 0.7vw;
+}
+#icons{
+    display: flex;
+    gap: 0.8vw;
+    font-size: 1.4vw;
+    margin-right:3vw ;
+}
