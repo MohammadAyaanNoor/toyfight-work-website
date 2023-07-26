@@ -56,33 +56,13 @@ var tl = gsap.timeline({
     scrollTrigger:{
         trigger:"#page1",
         scroller:"#main",
-        markers:true,
+        // markers:true,
         pin:true,
         start:"top 0%",
    
         scrub:4
     }
 });
-
-// tl
-// .from("#nav>a",{
-//         opacity:0,
-//         duration:1,
-//         ease:Expo.ease
-//     },'a')
-// .from("#centernav>a",{
-//         y:-300,
-//         opacity:0.2,
-//         stagger:0.3,
-//         ease:Expo.easeInOut
-//     },'a')
-
-// .from("#page1>h1",{
-//     color:"rgb(97 26 190)",
-//     ease:Expo.easeInOut,
-//     duration:2
-// },'a')
-
 
 tl
 .to("#centernav>a",{
